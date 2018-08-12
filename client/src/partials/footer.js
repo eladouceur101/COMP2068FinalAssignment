@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid } from 'semantic-ui-react';
+// import { Grid } from 'semantic-ui-react';
 import { TotalFoot, FootStyle } from './partialStyle';
 
 const Footing = () => (

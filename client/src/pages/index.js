@@ -38,21 +38,19 @@ class App extends React.Component {
                     </Card.Content>
                     <Card.Content extra>
                       <div className="ui three buttons">
-                        <a href="">
-                          <Button animated>
-                            <Button.Content visible>View</Button.Content>
-                            <Button.Content hidden>
-                              <Icon name="shop" />
-                            </Button.Content>
-                          </Button>
-                        </a>
-                        <Button animated>
+                        <Button href="https://www.w3schools.com" animated>
+                          <Button.Content visible>View</Button.Content>
+                          <Button.Content hidden>
+                            <Icon name="shop" />
+                          </Button.Content>
+                        </Button>
+                        <Button href="" animated>
                           <Button.Content visible>Edit</Button.Content>
                           <Button.Content hidden>
                             <Icon name="edit" />
                           </Button.Content>
                         </Button>
-                        <Button animated>
+                        <Button href="https://www.w3schools.com" animated>
                           <Button.Content visible>Delete</Button.Content>
                           <Button.Content hidden>
                             <Icon name="trash alternate" />
