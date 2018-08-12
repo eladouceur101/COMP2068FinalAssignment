@@ -19,7 +19,7 @@ exports.create = (req, res) => {
 
   let image = req.files.file;
 
-  let uploadLocation = `../art/${image.name}`;
+  let uploadLocation = `../public/art/${image.name}`;
 
   image.mv(uploadLocation, () => {
     err ? res.status(500).send(err) : res.send('File uploaded');

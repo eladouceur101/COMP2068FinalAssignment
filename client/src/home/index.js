@@ -28,7 +28,7 @@ class App extends React.Component {
               <Grid.Row centered columns={4}>
                 <Grid.Column centered>
                   <Card>
-                    <Image src="http://placekitten.com/1600/500" />
+                    <Image src="http://localhost:3000/art/pollock1.jpg" />
                     <Card.Content>
                       <Card.Header>{art.artName}</Card.Header>
                       <Card.Meta>
@@ -38,12 +38,14 @@ class App extends React.Component {
                     </Card.Content>
                     <Card.Content extra>
                       <div className="ui three buttons">
-                        <Button animated>
-                          <Button.Content visible>View</Button.Content>
-                          <Button.Content hidden>
-                            <Icon name="shop" />
-                          </Button.Content>
-                        </Button>
+                        <a href="">
+                          <Button animated>
+                            <Button.Content visible>View</Button.Content>
+                            <Button.Content hidden>
+                              <Icon name="shop" />
+                            </Button.Content>
+                          </Button>
+                        </a>
                         <Button animated>
                           <Button.Content visible>Edit</Button.Content>
                           <Button.Content hidden>
