@@ -4,6 +4,7 @@ import Heading from './partials/header';
 import Footing from './partials/footer';
 import Home from './pages/index';
 import New from './pages/create';
+import View from './pages/view';
 
 const App = () => (
   <Router>
@@ -12,6 +13,7 @@ const App = () => (
       <Switch>
         <Route exact path="/" component={Home} />
         <Route path="/create" component={New} />
+        <Route path="/view" component={View} />
       </Switch>
       <Footing />
     </Fragment>

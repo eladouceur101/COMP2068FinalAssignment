@@ -1,7 +1,7 @@
 import React from 'react';
 import Axios from 'axios';
 import Host from '../config/api';
-import { Form } from 'semantic-ui-react';
+import { Form, Container, Icon, Segment } from 'semantic-ui-react';
 import Dropzone from 'react-dropzone';
 
 class create extends React.Component {
@@ -47,69 +47,77 @@ class create extends React.Component {
 
   render() {
     return (
-      <Form onSubmit={this.handleSubmit}>
-        <Dropzone accept="image/*" onDrop={files => this.onDrop(files)}>
-          <div>
-            Drag Art Image File on here, or click to select file to upload
-          </div>
-        </Dropzone>
-        <Form.Input
-          fluid
-          name="artName"
-          label="Art Title"
-          placeholder="Art Title"
-          required
-          onChange={this.handleChange}
-        />
-        <Form.Input
-          fluid
-          name="description"
-          label="Description"
-          placeholder="Description"
-          required
-          onChange={this.handleChange}
-        />
-        <Form.Input
-          fluid
-          name="price"
-          label="Listing Price"
-          placeholder="Listing Price"
-          required
-          onChange={this.handleChange}
-        />
-        <Form.Input
-          fluid
-          name="name"
-          label="Artist"
-          placeholder="Artist"
-          required
-          onChange={this.handleArtistChange}
-        />
-        <Form.Input
-          fluid
-          name="born"
-          label="Artist DOB"
-          placeholder="Artist DOB"
-          required
-          onChange={this.handleArtistChange}
-        />
-        <Form.Input
-          fluid
-          name="died"
-          label="Artist Death"
-          placeholder="Artist Death"
-          onChange={this.handleArtistChange}
-        />
-        <Form.Input
-          fluid
-          name="nationality"
-          label="Artist Nationality"
-          placeholder="Artist Nationality"
-          required
-          onChange={this.handleArtistChange}
-        />
-        <Form.Button content="Submit" />
-      </Form>
+      <Segment raised>
+        <Container>
+          <Form onSubmit={this.handleSubmit}>
+            <Dropzone accept="image/*" onDrop={files => this.onDrop(files)}>
+              <Container textAlign="center">
+                <br />
+                <h3>
+                  Drag Art Image File on here, or click to select file to upload
+                </h3>
+                <Icon name="plus circle" />
+              </Container>
+            </Dropzone>
+            <Form.Input
+              fluid
+              name="artName"
+              label="Art Title"
+              placeholder="Art Title"
+              required
+              onChange={this.handleChange}
+            />
+            <Form.Input
+              fluid
+              name="description"
+              label="Description"
+              placeholder="Description"
+              required
+              onChange={this.handleChange}
+            />
+            <Form.Input
+              fluid
+              name="price"
+              label="Listing Price"
+              placeholder="Listing Price"
+              required
+              onChange={this.handleChange}
+            />
+            <Form.Input
+              fluid
+              name="name"
+              label="Artist"
+              placeholder="Artist"
+              required
+              onChange={this.handleArtistChange}
+            />
+            <Form.Input
+              fluid
+              name="born"
+              label="Artist DOB"
+              placeholder="Artist DOB"
+              required
+              onChange={this.handleArtistChange}
+            />
+            <Form.Input
+              fluid
+              name="died"
+              label="Artist Death"
+              placeholder="Artist Death"
+              onChange={this.handleArtistChange}
+            />
+            <Form.Input
+              fluid
+              name="nationality"
+              label="Artist Nationality"
+              placeholder="Artist Nationality"
+              required
+              onChange={this.handleArtistChange}
+            />
+            <Form.Button content="Submit" />
+          </Form>
+        </Container>
+      </Segment>
     );
   }
 }

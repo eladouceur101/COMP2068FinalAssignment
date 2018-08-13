@@ -15,7 +15,7 @@ exports.show = (req, res) => {
 };
 
 exports.create = (req, res) => {
-  console.log(req.body.file);
+  console.log(req.files.file);
   if (!req.files) return res.status(500).send('No file were uploaded.');
 
   let image = req.files.file;
